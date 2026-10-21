@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Brewed Co. — specialty coffee, handcrafted beverages, and a little warmth in every cup.">
+  <meta name="theme-color" content="#FBF7F2">
+  <title>Brewed Co. | A little warmth in every cup</title>
+
+  <!-- Bootstrap via CDN, puis notre feuille de style pour personnaliser le site. -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Cette navigation est recopiée à l'identique sur les trois pages. -->
+  <header>
+    <nav class="navbar navbar-expand-lg site-nav" aria-label="Main navigation">
+      <div class="container-fluid nav-container">
+        <a class="navbar-brand" href="index.html">Brewed Co.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavigation">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+          </ul>
+          <a class="btn btn-brew btn-order" href="menu.html">order now <svg class="arrow-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 13 13 3M3 3h10v10"/></svg></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero container-fluid p-0" aria-labelledby="hero-title">
+      <div class="row g-0">
+        <div class="col-lg-6 hero-copy">
+          <div class="hero-content">
+            <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>SPECIALTY COFFEE HOUSE</p>
+            <h1 id="hero-title"><span>Where Every</span> <span>Cup Tells A</span> <em>Story</em></h1>
+            <p class="hero-description">Hand-crafted beverages made with single-origin beans, brewed with intention and served with warmth.</p>
+            <div class="d-flex flex-wrap gap-3 hero-actions">
+              <a class="btn btn-brew" href="menu.html">Explore Our Menu <svg class="arrow-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 13 13 3M3 3h10v10"/></svg></a>
+              <a class="btn btn-brew" href="about.html">Our Story</a>
+            </div>
+            <p class="hero-note">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M19 4c-9-2-15 2-14 8 1 7 12 8 14-8Z"/><path d="M4 21 15 9M9 15l-1-5m1 5 5 1"/></svg>
+              Thoughtfully sourced. Beautifully brewed.
+            </p>
+          </div>
+        </div>
+
+        <!-- Remplacez simplement l'URL ci-dessous par images/mon-latte.jpg. -->
+        <div class="col-lg-6 hero-visual">
+          <img class="hero-image" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" alt="Latte art in ceramic cups on a wooden café table, surrounded by green plants" fetchpriority="high" width="1000" height="1500">
+          <div class="hero-overlay" aria-hidden="true"></div>
+          <span class="image-caption">A little warmth in every cup.</span>
+          <div class="special-card">
+            <div class="special-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 12h16v8a7 7 0 0 1-7 7h-2a7 7 0 0 1-7-7v-8Zm16 1h2a4 4 0 0 1 0 8h-2M5 28h21M12 4v4m5-6v6m5-4v4"/></svg>
+            </div>
+            <div>
+              <p class="eyebrow mb-2">TODAY'S SPECIAL</p>
+              <p class="special-name mb-0">Honey Oat Latte</p>
+              <p class="special-detail mb-0">A sweet little moment.</p>
+            </div>
+          </div>
+          <span class="image-number" aria-hidden="true">01 / THE DAILY RITUAL</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Adresse et horaires d'exemple : à personnaliser sur les trois pages. -->
+  <footer class="site-footer">
+    <div class="container-fluid footer-content">
+      <p class="mb-0">© 2026 Brewed Co.</p>
+      <address class="mb-0">24 Coffee Lane · Your neighborhood</address>
+      <p class="mb-0">Mon–Fri 7am–6pm <span class="footer-dot" aria-hidden="true">·</span> Sat–Sun 8am–5pm</p>
+    </div>
+  </footer>
+</body>
+</html>
